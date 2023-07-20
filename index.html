@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Weather Dashboard</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Weather Dashboard</h1>
+        </nav>
+    </header>
 
-    <body>
-        <header>
-            <nav>
-                <h1>Weather Dashboard</h1>
-            </nav>
-        </header>
+    <main>
+        <aside>
+            <div id="search-div">
+                <label for="cityInput">Search for a City:</label>
+                <input type="text" id="cityInput">
+                <button id="searchButton">Search</button>
+                <button id="clearHistory">Clear All</button>
+            </div>
 
-        <main>
-            <aside>
-                <div id="search-div">
-                    <label for="cityInput">Search for a City:</label>
-                    <input type="text" id="cityInput" />
-                    <button id="searchButton">Search</button>
-                </div>
+            <div class="location-cards" id="searchHistory"></div>
+        </aside>
 
-                <div class="location-cards">
-                    <button>Santa Barbara</button>
-                </div>
-            </aside>
-
+        <div id="section-container">
+            <!-- Todays weather details -->
             <section>
                 <div id="top-card">
-                    <h3>Santa Barbara (07/19/2023)</h3>
-                    <p>Temp: F</p>
-                    <p>Wind: MPH</p>
-                    <p>Humidity: %</p>
+                    <h3><span id="top-card-city"></span> <span id="top-card-city-date"></span></h3>
+                    <p>Temp: <span id="top-card-temp"></span> F</p>
+                    <p>Wind: <span id="top-card-wind"></span> MPH</p>
+                    <p>Humidity: <span id="top-card-humidity"></span> %</p>
                 </div>
             </section>
 
+            <!-- 5-day forecast section -->
             <section>
                 <div id="forecast-cards">
                     <h4>5-Day Forecast:</h4>
-                    <div class="card">
-                        <p>07/19/2023</p>
-                        <img src="" alt="" />
-                        <p>Temp: F</p>
-                        <p>Wind: MPH</p>
-                        <p>Humidity: %</p>
+
+                    <div id="card-container">
+                        <div class="card">
+                            <p><span class="card-five-day-forecast-date"></span></p>
+                            <img src="" alt="" class="card-icon">
+                            <p>Temp: <span class="card-temp"></span> F</p>
+                            <p>Wind: <span class="card-wind"></span> MPH</p>
+                            <p>Humidity: <span class="card-humidity"></span> %</p>
+                        </div>
+
+                        <div class="card">
+                            <p><span class="card-five-day-forecast-date"></span></p>
+                            <img src="" alt="" class="card-icon">
+                            <p>Temp: <span class="card-temp"></span> F</p>
+                            <p>Wind: <span class="card-wind"></span> MPH</p>
+                            <p>Humidity: <span class="card-humidity"></span> %</p>
+                        </div>
+
+                        <div class="card">
+                            <p><span class="card-five-day-forecast-date"></span></p>
+                            <img src="" alt="" class="card-icon">
+                            <p>Temp: <span class="card-temp"></span> F</p>
+                            <p>Wind: <span class="card-wind"></span> MPH</p>
+                            <p>Humidity: <span class="card-humidity"></span> %</p>
+                        </div>
+
+                        <div class="card">
+                            <p><span class="card-five-day-forecast-date"></span></p>
+                            <img src="" alt="" class="card-icon">
+                            <p>Temp: <span class="card-temp"></span> F</p>
+                            <p>Wind: <span class="card-wind"></span> MPH</p>
+                            <p>Humidity: <span class="card-humidity"></span> %</p>
+                        </div>
+
+                        <div class="card">
+                            <p><span class="card-five-day-forecast-date"></span></p>
+                            <img src="" alt="" class="card-icon">
+                            <p>Temp: <span class="card-temp"></span> F</p>
+                            <p>Wind: <span class="card-wind"></span> MPH</p>
+                            <p>Humidity: <span class="card-humidity"></span> %</p>
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <script src="./assets/js/script.js"></script>
-    </body>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
