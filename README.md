@@ -1,8 +1,8 @@
-# Workday Scheduler
+# Weather Dashboard
 
 ## Description
 
-The Workday Scheduler is a weather dashboard application that allows users to search for the current weather and 5-day forecast of any city. It utilizes the OpenWeather API to fetch weather data and displays it in an easy-to-read format.
+The Weather Dashboard is a fully responsive web application designed to provide users with convenient access to weather information. Whether you need to check the current weather or plan ahead with a 5-day forecast, this application has got you covered.
 
 ## Usage
 
