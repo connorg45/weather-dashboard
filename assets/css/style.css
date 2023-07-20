@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #06aed5;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+aside #search-div {
+  margin-bottom: 1rem;
+}
+
+aside label {
+  margin-bottom: 0.5rem;
+}
+
+aside input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+aside button {
+  background-color: #06aed5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-card {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+
+h4 {
+  text-align: center;
+}
+
+#card-container {
+  display: flex;
+  gap: 1rem;
+  flex: 1; /* Each card takes up equal width to fit in the row */
+}
+
+.card {
+  flex: 1 1 calc(20% - 1rem); /* Each card takes up 20% of the width minus 1rem gap */
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
