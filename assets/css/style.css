@@ -82,6 +82,11 @@ h4 {
   text-align: center;
 }
 
+.location-card {
+  margin-right: 0.5rem;
+}
+
+
 @media (max-width: 1540px) {
   #card-container {
     flex-wrap: wrap;
